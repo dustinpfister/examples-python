@@ -10,6 +10,22 @@ When it just comes to choosing a shebang there is all ready a great deal to writ
 
 This section should also touch base on using a python binary directly, make sure to have a few bash scripts that involve using a python binary to call a script, passing argumnets to a script, piping in python code by way of the standard input, and also using the python console.
 
+This section should also touch base on commnets in python
+
+
 ## s2-var
 
 This section is on the topic of variable in python. This section should stick with what there is to work with in python by itself without a module. So then that would be Numbers, Strings, and Lists.
+
+## resources
+
+Good general getting started tutorial at python.org
+```
+https://docs.python.org/3/tutorial/
+```
+
+commnets
+```
+https://www.digitalocean.com/community/tutorials/how-to-write-comments-in-python-3
+https://dbader.org/blog/python-multiline-comment
+```
