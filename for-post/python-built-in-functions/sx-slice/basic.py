@@ -1,3 +1,4 @@
-l=[1,2,3,4]
-for n in slice(5, 40):
-  print( n )
+x=slice(10, 40, 5)
+
+for i in range(0,100)[x]:
+  print(i, end='-')
