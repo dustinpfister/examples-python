@@ -6,5 +6,9 @@ def heavy(id='none', count=100):
     print(id, i)
     i = i + 1;
 
-x = threading.Thread(target=heavy, args=['thread',10])
+heavy('one', 1000)
+heavy('two', 1000)
+
+x = threading.Thread(target=heavy, args=['three',1000])
 x.start()
+heavy('four', 1000)
