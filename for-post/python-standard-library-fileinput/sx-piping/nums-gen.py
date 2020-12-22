@@ -1,2 +1,3 @@
 r=range(0,10)
-print(list(r));
+for n in r:
+  print(n, end=' ')
