@@ -1,2 +1,4 @@
 f=open('./hello.txt', 'r')
-print(f)
+s=f.read()
+print(s) # 'Hello World'
+print(type(s).__name__) # 'str'
