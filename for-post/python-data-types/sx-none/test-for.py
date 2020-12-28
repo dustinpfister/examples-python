@@ -6,9 +6,9 @@ def testN(n):
 
 def goWith(n):
     t=testN(n)
-    if(t == True):
+    if(t is True):
         print('good');
-    if(t == None):
+    if(t is None):
         print('out of range')
 
 goWith(5)  # 'out of range'
