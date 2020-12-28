@@ -1,3 +1,4 @@
+# here is a function that does not return anything
 def foo():
     b=0
 a=foo()
