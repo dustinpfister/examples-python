@@ -1,4 +1,2 @@
-def foo():
-    b=0
-a=foo()
-print(a) # {0, 1} <class 'set'>
+a=None
+print(a, type(a)) # None <class 'NoneType'>
