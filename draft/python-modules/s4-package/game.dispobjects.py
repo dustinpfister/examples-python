@@ -1,5 +1,3 @@
-
-class DisplayObject:
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
+CELLSIZE = 32
+def createBasicDispObj(x, y):
+    return {'x': x, 'y': y, 'w': CELLSIZE, 'h': CELLSIZE}
