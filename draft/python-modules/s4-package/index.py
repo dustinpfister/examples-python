@@ -1,3 +1,3 @@
-import game
+import game.disp as disp
 
-print(game.disp.createBasic(5,5))
+print(disp.createBasic)

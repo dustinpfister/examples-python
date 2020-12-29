@@ -1,3 +1,3 @@
-import game.dispobjects as disp
+import game.disp as disp
 
 name="my basic game thing"
