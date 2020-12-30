@@ -10,14 +10,12 @@ class Numbered:
     def __next__(self):
         if self.index == len(self.data):
             raise StopIteration
-        value=self.data[self.index]
+        d={'value': self.data[self.index], 'index': self.index}
         self.index = self.index + 1
-        return {'value': value, 'index': self.index}
+        return d
     
 x = Numbered('foo')
 
 for prop in x:
     print(prop)
     
-for prop in x:
-    print(prop)
