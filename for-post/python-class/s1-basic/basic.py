@@ -9,4 +9,4 @@ class MyClass:
         print(self.a, self.b, self.c)
 
 x=MyClass(2)
-x.out()
+x.out() # 40 2 42
