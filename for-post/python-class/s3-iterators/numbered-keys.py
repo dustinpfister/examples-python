@@ -4,6 +4,7 @@ class Numbered:
         self.index = 0
 
     def __iter__(self):
+        self.index = 0
         return self
 
     def __next__(self):
@@ -15,5 +16,8 @@ class Numbered:
     
 x = Numbered('foo')
 
+for prop in x:
+    print(prop)
+    
 for prop in x:
     print(prop)
