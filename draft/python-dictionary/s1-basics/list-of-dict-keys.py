@@ -1,6 +1,7 @@
 a={'a': 0, 'b': 1}
-b=a.keys();
-c=list(a)
+b=list(a)
+c=list(a.values())
 
-print(type(c).__name__) # list
-print(c) # ['a', 'b']
+print(type(b).__name__) # list
+print(b) # ['a', 'b']
+print(c) # [0, 1]
