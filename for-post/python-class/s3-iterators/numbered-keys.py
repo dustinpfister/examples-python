@@ -18,4 +18,6 @@ x = Numbered('foo')
 
 for prop in x:
     print(prop)
-    
+#{'value': 'f', 'index': 0}
+#{'value': 'o', 'index': 1}
+#{'value': 'o', 'index': 2}
