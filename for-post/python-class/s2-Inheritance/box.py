@@ -7,4 +7,4 @@ class Box():
 
 a=Box()
 
-print(a)
+print(a.__dict__)
