@@ -1,2 +1,2 @@
 import array as arr
-print(arr.typecodes)
+print(arr.typecodes) # bBuhHiIlLqQfd
