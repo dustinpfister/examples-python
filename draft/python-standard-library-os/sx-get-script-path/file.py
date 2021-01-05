@@ -1,6 +1,6 @@
 import os,sys
 dir_current = os.getcwd()
-dir_script = os.path.realpath(os.path.dirname(__file__))
+dir_script = os.path.abspath(os.path.dirname(__file__))
 dir_parent = os.path.dirname(dir_script)
 
 # insert dir_parent
