@@ -1,3 +1,3 @@
 f=open('foo.txt', 'w')
 
-print(f)
+print(f.fileno()) # the file no
