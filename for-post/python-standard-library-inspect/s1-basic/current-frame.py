@@ -2,4 +2,4 @@ import inspect
 
 f=inspect.currentframe()
 
-print(f)
+print(inspect.isframe(f)) # True
