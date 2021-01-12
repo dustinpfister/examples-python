@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-import sys as s
-print(s.argv[1])
+import sys
+print(sys.argv[1].upper())
