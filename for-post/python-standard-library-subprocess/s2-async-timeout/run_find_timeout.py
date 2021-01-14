@@ -1,10 +1,10 @@
 import subprocess
 
 print('foo');
-def findFromFolder(folder='/home', timeout=0.5):
+def findFromFolder(f='/home', t=0.5):
     r=None
     try:
-        r=subprocess.run(['find', '.',  '*.md'], cwd=folder, timeout=timeout, capture_output=True)
+        r=subprocess.run(['find', '.',  '-name', '*.js'], cwd=f, timeout=t, capture_output=True)
     except (subprocess.TimeoutExpired):
         r='time out'
     return r

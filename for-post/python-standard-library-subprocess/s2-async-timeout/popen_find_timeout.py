@@ -9,8 +9,7 @@ def findFromFolder(folder='/home'):
         r='time out'
     return r
 
-
-a=findFromFolder('/home/pi/js')
+a=findFromFolder('/')
 print('bar');
 
 if(type(a).__name__ == 'str'):
