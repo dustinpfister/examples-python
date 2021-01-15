@@ -1,6 +1,7 @@
 import tkinter as tk
 
 root = tk.Tk()
+root.minsize(320, 240)
 btn_text = tk.StringVar()
 btn_text.set('0')
 
