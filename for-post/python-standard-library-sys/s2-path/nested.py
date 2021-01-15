@@ -1,4 +1,4 @@
 import sys
-sys.path.append('foo');
+sys.path.append('nested');
 import bar
 print(bar.foo()) # 'bar'
