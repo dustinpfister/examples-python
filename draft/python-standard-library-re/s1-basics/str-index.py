@@ -1,8 +1,8 @@
-a='easy as abc'
-b='not so easy'
+a='so abc is easy as abc'
+b='things are not always so easy'
 
 print( a.index('abc') )
-# 8
+# 3
 
 try:
     print( b.index('abc') )

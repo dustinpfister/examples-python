@@ -1,4 +1,4 @@
-a='abc is easy as abc'
+a='so abc is easy as abc'
 b='things are not always so easy'
 
 def find_string(string, sub_string):
@@ -18,7 +18,7 @@ def find_string(string, sub_string):
     return m
         
 print( find_string(a, 'abc') )
-# [{'start': 0, 'end': 3, 'text': 'abc'}, {'start': 15, 'end': 18, 'text': 'abc'}]
+# [{'start': 3, 'end': 6, 'text': 'abc'}, {'start': 18, 'end': 21, 'text': 'abc'}]
 
 print( find_string(b, 'abc') )
 # []
