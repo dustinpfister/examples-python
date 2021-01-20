@@ -1,3 +1,6 @@
+a='abc is easy as abc'
+b='things are not always so easy'
+
 def find_string(string, sub_string):
     i=0
     sl = len(string)
@@ -14,8 +17,8 @@ def find_string(string, sub_string):
         i = i + 1
     return m
         
-print( find_string('abc is easy as abc', 'abc') )
+print( find_string(a, 'abc') )
 # [{'start': 0, 'end': 3, 'text': 'abc'}, {'start': 15, 'end': 18, 'text': 'abc'}]
 
-print( find_string('things are not always so easy', 'abc') )
+print( find_string(b, 'abc') )
 # []
