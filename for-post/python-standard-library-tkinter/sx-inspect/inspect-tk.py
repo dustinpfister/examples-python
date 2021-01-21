@@ -9,11 +9,10 @@ members=inspect.getmembers(root, inspect.ismethod)
 # print out all methods and doc strings for them
 # of the Tk Class
 for m in members:
-    method = m[0]
-    print('')
-    print(method)
+    print('\n\n\n')
+    print(m[0], ' ( ', type(m[1]).__name__, ' ) ', m, sep='')
     print('********** ********** **********')
-    print(method.__doc__)
+    print(m[1].__doc__)
     
 sys.exit(0)
     
