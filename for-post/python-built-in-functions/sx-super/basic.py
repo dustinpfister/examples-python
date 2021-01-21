@@ -8,6 +8,10 @@ class Box():
     def area(self):
         return self.w * self.h
     
+class Ship(Box)
+    def __init__(self, heading=90, box=Box()):
+        super()
+    
 b=Box(10,15,10,5)
 
 print(b.area()) # 50
