@@ -1,4 +1,4 @@
 import random
 
-r=random.randint(1, 6)
+r=random.random()
 print(r)
