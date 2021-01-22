@@ -5,4 +5,5 @@ d2 = date.datetime(2010, 8, 22, 10, 5, 0, 0)
 
 td = d2 - d1
 
-print(td.days) # 10000
+print( type(td).__name__)  # timedelta
+print( td.days )           # 10000
