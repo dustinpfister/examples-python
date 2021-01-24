@@ -6,11 +6,25 @@ def echo(n):
 
 def angleToFrom(toX, toY, fromX, fromY, invert=False, degrees=True):
     angle = math.atan2(toY - fromY, toX - fromX)
-    if(invert == True):
+    if(invert):
         angle += math.pi
-    return angle;
+    if(degrees):
+        return math.degrees(angle) % 360
+    return angle % (math.tau)
 
-a1 = angleToFrom(0,0,100,0, True)
-print(a1)
+# seems to work
+print( angleToFrom(0, 0, 100, 0) )   # 180.0
+print( angleToFrom(0, 0, -100, 0) )  # 0.0
+print( angleToFrom(0, 0,  0, 100) )  # 270.0
+print( angleToFrom(0, 0,  0, -100) ) # 90.0
+print( angleToFrom(0, 0,  -100, 0, degrees=False, invert=True) ) # 3.141592653589793
 
-print(math.degrees(math.pi * -0.5) % 360)
+def createBlock():
+    x = -100 + random.random() * 200;
+    y = -100 + random.random() * 200;
+    a = angleToFrom(0, 0, x, y)
+    return {'x': x, 'y': y, 'a': a}
+
+block = createBlock()
+
+print(block)
