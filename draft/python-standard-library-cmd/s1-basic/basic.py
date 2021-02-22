@@ -1,21 +1,12 @@
 import cmd
 
-
 class BasicApp(cmd.Cmd):
-    posX=0;
-    posY=0;
-    def printpos(self):
-        print('pos is ', self.posX, self.posY)
-    def do_home(self, line):
-        self.posX = 0;
-        self.posY = 0;
-        self.printpos()
-    def do_left(self, line):
-        self.posX = self.posX + 1;
-        self.printpos()
-    def do_right(self, line):
-        self.posX = self.posX - 1;
-        self.printpos()
+    "Basic Cmd App Example"
+    i=0
+    def do_thing(self, line):
+        "step the i prop by 1"
+        self.i = self.i + 1
+        print('i =', self.i)
 
 if __name__ == '__main__':
-    BasicApp().cmdloop();
+    BasicApp().cmdloop()
