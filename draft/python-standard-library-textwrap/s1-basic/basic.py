@@ -1,6 +1,5 @@
 import textwrap
 
-
 str = 'this is some text that I want to wrap to a list of lines'
 
 lines = textwrap.wrap(str, width=20)
