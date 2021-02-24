@@ -31,5 +31,5 @@ args = parser.parse_args()
 sides = args.sides.split(',');
 
 # using dice lib
-set=dice.roll_set( count = int(args.count),  sides = sides )
+set=dice.roll_set( count = int(args.count),  sides = sides, default_sides = args.default_sides )
 print(set)
