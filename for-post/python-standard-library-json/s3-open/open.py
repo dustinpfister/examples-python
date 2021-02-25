@@ -24,18 +24,3 @@ state['c'] = int(c) + 1
 put_state(state)
 print(  )
 print(state)
-
-#j=f.read()
-#print(j)
-#if j == '':
-#    print('okay');
-#    startState = json.dumps({"count": 0})
-#    f.write(startState)
-#else:
-#    print(f.read());
-#f.write('hello world\n')
-#f.close()
- 
-#f=open('./foo.txt', 'r')
-#print(f.read())
-#f.close()
