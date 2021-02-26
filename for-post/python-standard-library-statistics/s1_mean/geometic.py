@@ -15,4 +15,5 @@ def prod(data):
 def geometric_mean(data):
     return nroot(prod(data), len(data))
 
-print( geometric_mean([100, 50]) )  # 70.71067811865476
+print( geometric_mean([4, 9]) )  # 6.0
+print( geometric_mean([14, 32]) )  # 21.166010488516726
