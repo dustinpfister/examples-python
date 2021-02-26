@@ -1,9 +1,7 @@
-#def prod(iterable):
-#    return reduce(operator.mul, iterable, 1)
-
+# nth root
 def nroot(num, degree=2):
     return pow(num, 1 / degree)
-
+# product
 def prod(data):
     pro=data[0]
     i=1
@@ -11,7 +9,7 @@ def prod(data):
         pro = pro * data[i]
         i = i + 1
     return pro
-
+# geometric mean
 def geometric_mean(data):
     return nroot(prod(data), len(data))
 
