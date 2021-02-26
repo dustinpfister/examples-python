@@ -1,8 +1,12 @@
-import json
+import json, os
+
+# resolve an absolute file path for the file
+file_name = 'state.json'
+file_path = os.path.abspath( os.path.join( os.getcwd(), file_name) )
 
 def get_state():
     try:
-        f = open('./state.json', 'r')
+        f = open(file_path, 'r')
         j = json.loads(f.read())
         f.close()
         print('json load good');
@@ -12,7 +16,7 @@ def get_state():
         return {"c": 0}
 
 def put_state(obj):
-    f = open('./state.json', 'w+')
+    f = open(file_path, 'w+')
     j = json.dumps(obj)
     f.write( j )
     f.close()
